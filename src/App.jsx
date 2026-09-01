@@ -38,6 +38,23 @@ function App() {
       <main className="app">
       <section className="greeting-card">
         <h1>Multilingual Greeting Generator</h1>
+        <p className="instructions">
+        Enter your name and choose your preferred language.
+      </p>
+
+      <form onSubmit={handleSubmit}>
+        <div className="form-group">
+          <label htmlFor="name">Your name</label>
+
+          <input
+            id="name"
+            type="text"
+            value={name}
+            onChange={(event) => setName(event.target.value)}
+            placeholder="Enter your name"
+          />
+        </div>
+      </form>
       </section>
     </main>
   )
