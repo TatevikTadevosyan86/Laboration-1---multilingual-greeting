@@ -54,6 +54,28 @@ function App() {
             placeholder="Enter your name"
           />
         </div>
+        <div className="form-group">
+  <label htmlFor="language">Preferred language</label>
+
+  <select
+    id="language"
+    value={language}
+    onChange={(event) => setLanguage(event.target.value)}
+  >
+    <option value="sv">Svenska</option>
+    <option value="en">English</option>
+    <option value="hy">Հայերեն</option>
+    <option value="ru">Русский</option>
+    <option value="es">Español</option>
+    <option value="fr">Français</option>
+    <option value="de">Deutsch</option>
+    <option value="it">Italiano</option>
+    <option value="pt">Português</option>
+    <option value="ja">日本語</option>
+    <option value="zh">中文</option>
+    <option value="ar">العربية</option>
+  </select>
+</div>
       </form>
       </section>
     </main>
