@@ -28,13 +28,18 @@ function App() {
       setResult('Please enter your name.')
       return
   }
+
   const generatedGreeting = greetings[language](cleanName)
   setResult(generatedGreeting)
+}
+
 
   return (
-    <>
-      <h1>Multilingual Greeting Generator!</h1>
-    </>
+      <main className="app">
+      <section className="greeting-card">
+        <h1>Multilingual Greeting Generator</h1>
+      </section>
+    </main>
   )
 }
 
