@@ -78,6 +78,7 @@ function App() {
 </div>
 <button type="submit">Generate Greeting</button>
       </form>
+      <p className="result">{result}</p>
       </section>
     </main>
   )
