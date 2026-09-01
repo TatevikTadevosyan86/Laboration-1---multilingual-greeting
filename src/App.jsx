@@ -76,6 +76,7 @@ function App() {
     <option value="ar">العربية</option>
   </select>
 </div>
+<button type="submit">Generate Greeting</button>
       </form>
       </section>
     </main>
