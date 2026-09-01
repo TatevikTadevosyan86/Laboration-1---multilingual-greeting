@@ -21,7 +21,15 @@ function App() {
   const [language, setLanguage] = useState('sv')  
   const [result, setResult] = useState('')
 
-  function handleSubmit(event)
+  function handleSubmit(event){
+    event.preventDefault()
+    const cleanName = name.trim()
+     if (cleanName === '') {
+      setResult('Please enter your name.')
+      return
+  }
+  const generatedGreeting = greetings[language](cleanName)
+  setResult(generatedGreeting)
 
   return (
     <>
